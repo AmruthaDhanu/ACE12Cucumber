@@ -1,0 +1,81 @@
+BROKER SCHEMA com.cts.coe.ace.cucumber
+
+
+DECLARE DOCTORCACHE SHARED ROW ROW (
+	'[{
+	"DoctorFirstName":"Kiran",
+	"DoctorLastName":"Shetty",
+	"Specialization":"Cardiologist",
+	"PhoneNumber":"123456",
+	"AddLine1":"Address1",
+	"AddLine2":"Address2",
+	"City":"Bangalore",
+	"State":"Karnataka",
+	"ZipCode":"566078"
+	},
+	{
+	"DoctorFirstName":"Aravind",
+	"DoctorLastName":"Kumar",
+	"Specialization":"Cardiologist",
+	"PhoneNumber":"2222222222",
+	"AddLine1":"Aravind-Address1",
+	"AddLine2":"Aravind-Address2",
+	"City":"Bangalore",
+	"State":"Karnataka",
+	"ZipCode":"566078"
+	},
+	{
+	"DoctorFirstName":"Jayesh",
+	"DoctorLastName":"M",
+	"Specialization":"Cardiologist",
+	"PhoneNumber":"3333333333",
+	"AddLine1":"Jayesh-Address1",
+	"AddLine2":"Jayesh-Address2",
+	"City":"Bangalore",
+	"State":"Karnataka",
+	"ZipCode":"566078"
+	}]' AS CARDIOLOGIST,
+	
+	'[{
+	"DoctorFirstName":"Ananth",
+	"DoctorLastName":"S",
+	"Specialization":"Pediatrician",
+	"PhoneNumber":"123456",
+	"AddLine1":"Address1",
+	"AddLine2":"Address2",
+	"City":"Bangalore",
+	"State":"Karnataka",
+	"ZipCode":"566078"
+	},
+	{
+	"DoctorFirstName":"Anand",
+	"DoctorLastName":"P",
+	"Specialization":"Pediatrician",
+	"PhoneNumber":"88888888",
+	"AddLine1":"Anand-Address1",
+	"AddLine2":"Anand-Address2",
+	"City":"Bangalore",
+	"State":"Karnataka",
+	"ZipCode":"566078"
+	},
+	{
+	"DoctorFirstName":"Michael",
+	"DoctorLastName":"M",
+	"Specialization":"Pediatrician",
+	"PhoneNumber":"9999999",
+	"AddLine1":"Michael-Address1",
+	"AddLine2":"Michael-Address2",
+	"City":"Bangalore",
+	"State":"Karnataka",
+	"ZipCode":"566078"
+	}]' AS PEDIATRICIAN
+	
+	
+);
+
+
+CREATE PROCEDURE checkAndFetchDoctorInfo (IN DoctorFname CHARACTER) RETURNS CHARACTER
+BEGIN
+	RETURN DOCTORCACHE.{DoctorFname};
+END;
+
