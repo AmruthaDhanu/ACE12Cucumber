@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageAssembly iib:parser="GENERICROOT" xmlns:iib="http://com.ibm.iib/lt/1.0">
+   <version iib:valueType="INTEGER" xmlns:iib="http://com.ibm.iib/lt/1.0">1</version>
+   <checkpoint>
+      <messageId iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">00004C78-63EA1E91-00000001</messageId>
+      <propagationCount iib:valueType="INTEGER" xmlns:iib="http://com.ibm.iib/lt/1.0">0</propagationCount>
+      <nodeCallDepth iib:valueType="INTEGER" xmlns:iib="http://com.ibm.iib/lt/1.0">1</nodeCallDepth>
+      <timestamp iib:valueType="TIMESTAMP" xmlns:iib="http://com.ibm.iib/lt/1.0">2023-02-13 11:27:13.636</timestamp>
+      <source>
+         <name iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">HTTP Input</name>
+         <identifier iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">com.cts.coe.ace.cucumber.HealthcareDoctorsInquiry_MF#FCMComposite_1_1</identifier>
+         <type iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">ComIbmWSInputNode</type>
+         <terminal iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">out</terminal>
+         <nodePath>
+            <application iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">HealthcareApplication</application>
+            <messageFlow iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">com.cts.coe.ace.cucumber.HealthcareDoctorsInquiry_MF</messageFlow>
+            <node iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">HTTP Input</node>
+         </nodePath>
+         <inputNode iib:valueType="BOOLEAN" xmlns:iib="http://com.ibm.iib/lt/1.0">TRUE</inputNode>
+      </source>
+      <target>
+         <name iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">ReadPropertyFile</name>
+         <identifier iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">com.cts.coe.ace.cucumber.HealthcareDoctorsInquiry_MF#FCMComposite_1_5</identifier>
+         <type iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">SubFlowNode</type>
+         <terminal iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">Load Appl Property Request</terminal>
+         <nodePath>
+            <application iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">HealthcareApplication</application>
+            <messageFlow iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">com.cts.coe.ace.cucumber.HealthcareDoctorsInquiry_MF</messageFlow>
+            <node iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">ReadPropertyFile</node>
+         </nodePath>
+         <resolved>
+            <name iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">ReadPropertyFile.au.co.mla.esb.common.propertyfile.util.ReadPropertyFile#InTerminal.Load Appl Property Request</name>
+            <identifier iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">com.cts.coe.ace.cucumber.HealthcareDoctorsInquiry_MF#FCMComposite_1_5.au.co.mla.esb.common.propertyfile.util.ReadPropertyFile#InTerminal.Load Appl Property Request</identifier>
+            <type iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">InputNode</type>
+            <terminal iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">in</terminal>
+            <nodePath>
+               <application iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">HealthcareApplication</application>
+               <messageFlow iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">com.cts.coe.ace.cucumber.HealthcareDoctorsInquiry_MF</messageFlow>
+               <subflow>
+                  <index iib:valueType="INTEGER" xmlns:iib="http://com.ibm.iib/lt/1.0">0</index>
+                  <name iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">ReadPropertyFile</name>
+               </subflow>
+               <node iib:valueType="CHARACTER" xmlns:iib="http://com.ibm.iib/lt/1.0">ReadPropertyFile.au.co.mla.esb.common.propertyfile.util.ReadPropertyFile#InTerminal.Load Appl Property Request</node>
+            </nodePath>
+         </resolved>
+      </target>
+   </checkpoint>
+   <environment/>
+   <localEnvironment iib:parser="MQROOT" xmlns:iib="http://com.ibm.iib/lt/1.0">
+      <Destination>
+         <HTTP>
+            <RequestIdentifier iib:valueType="BLOB">45564854000000000d000000e468874a442d000000000000</RequestIdentifier>
+         </HTTP>
+      </Destination>
+   </localEnvironment>
+   <exceptionList/>
+   <message iib:parser="WSRoot" xmlns:iib="http://com.ibm.iib/lt/1.0">
+      <Properties iib:parser="WSPROPERTYPARSER">
+         <MessageSet iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <MessageType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <MessageFormat iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <Encoding iib:valueType="INTEGER">546</Encoding>
+         <CodedCharSetId iib:valueType="INTEGER">1208</CodedCharSetId>
+         <Transactional iib:valueType="BOOLEAN">FALSE</Transactional>
+         <Persistence iib:valueType="BOOLEAN">FALSE</Persistence>
+         <CreationTime iib:valueType="GMTTIMESTAMP">2023-02-13 11:27:13.636</CreationTime>
+         <ExpirationTime iib:valueType="INTEGER">-1</ExpirationTime>
+         <Priority iib:valueType="INTEGER">0</Priority>
+         <ReplyIdentifier iib:valueType="BLOB">000000000000000000000000000000000000000000000000</ReplyIdentifier>
+         <ReplyProtocol iib:valueType="CHARACTER">SOAP-HTTP</ReplyProtocol>
+         <Topic iib:elementType="0x03000000"/>
+         <ContentType iib:valueType="CHARACTER">application/json; charset=utf-8</ContentType>
+         <IdentitySourceType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentitySourceToken iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentitySourcePassword iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentitySourceIssuedBy iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedToken iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedPassword iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedIssuedBy iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+      </Properties>
+      <HTTPInputHeader iib:parser="WSINPHDR">
+         <Content-Type iib:valueType="CHARACTER">application/json; charset=utf-8</Content-Type>
+         <User-Agent iib:valueType="CHARACTER">Java/1.8.0_331</User-Agent>
+         <Host iib:valueType="CHARACTER">localhost:7801</Host>
+         <Accept iib:valueType="CHARACTER">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</Accept>
+         <Connection iib:valueType="CHARACTER">keep-alive</Connection>
+         <Content-Length iib:valueType="CHARACTER">60</Content-Length>
+         <X-Original-HTTP-Command iib:valueType="CHARACTER">POST http://localhost:7801/DoctorInquiry HTTP/1.1</X-Original-HTTP-Command>
+         <X-Server-Name iib:valueType="CHARACTER">localhost</X-Server-Name>
+         <X-Server-Port iib:valueType="CHARACTER">7801</X-Server-Port>
+         <X-Remote-Addr iib:valueType="CHARACTER">127.0.0.1</X-Remote-Addr>
+         <X-Remote-Host iib:valueType="CHARACTER">localhost</X-Remote-Host>
+         <X-Scheme iib:valueType="CHARACTER">http</X-Scheme>
+      </HTTPInputHeader>
+      <JSON iib:parser="json">
+         <Data>
+            <Name iib:valueType="CHARACTER">Kiran</Name>
+            <Specialization iib:valueType="CHARACTER">Cardiologist</Specialization>
+         </Data>
+      </JSON>
+   </message>
+</MessageAssembly>
